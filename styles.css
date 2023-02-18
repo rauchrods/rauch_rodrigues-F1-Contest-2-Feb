@@ -154,18 +154,21 @@ td:nth-child(3){
     padding-left: 27px;
 }
 
-input[type=checkbox]{
-    opacity: 0.2;
-   border: 2px solid white;
-   color: black;
-   background-color: black;
-    height: 30px;
-    width: 30px;
+input{
+    width: 0;
+    height: 0;
 }
+
+input:checked+label{
+    background-color: rgb(53, 235, 36);
 }
-input[type=checkbox]:checked{
+label{
+    display: inline-block;
     background-color: black;
-    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 5px;
 }
 .maincontainer>div{
     border: 1px solid #808080;
@@ -177,3 +180,4 @@ tr:nth-child(1){
 }
 
 
+ 
